@@ -1,8 +1,10 @@
 import { Suspense } from 'react'
 
+import SuspenseLoader from './SuspenseLoader'
+
 const Loader = Component => props =>
 	(
-		<Suspense fallback={'Loading...'}>
+		<Suspense fallback={<SuspenseLoader />}>
 			<Component {...props} />
 		</Suspense>
 	)
