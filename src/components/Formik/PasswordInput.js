@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { IconButton } from '@mui/material'
 
-// import VisibilityIcon from '@mui/icons-material/Visibility'
-// import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
+import VisibilityIcon from '@mui/icons-material/Visibility'
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
 
 import StringInput from './StringInput'
 
@@ -10,7 +10,7 @@ const PasswordInput = ({ name, placeholder, label, innerLabel, ...rest }) => {
 	const [showPassword, setShowPassword] = useState(false)
 
 	const inputType = showPassword ? 'text' : 'password'
-	// const inputIcon = showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />
+	const inputIcon = showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />
 
 	return (
 		<StringInput
@@ -22,7 +22,7 @@ const PasswordInput = ({ name, placeholder, label, innerLabel, ...rest }) => {
 			InputProps={{
 				endAdornment: (
 					<IconButton onClick={() => setShowPassword(prev => !prev)}>
-						{'sasasa'}
+						{inputIcon}
 					</IconButton>
 				),
 			}}
