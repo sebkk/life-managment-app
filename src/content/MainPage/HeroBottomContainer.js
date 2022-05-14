@@ -14,6 +14,10 @@ const ButtonsWrapper = styled('nav')(
 		justify-content: center;
 		margin: ${theme.spacing(3, 0)};
 
+		> button {
+			width: 130px;
+		}
+
 		> button:first-of-type {
 			margin-right: ${theme.spacing(2)};
 		}
