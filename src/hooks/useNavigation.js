@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-export default function useMainPageLogic() {
+export const useNavigation = () => {
 	const navigate = useNavigate()
 
 	const onClickNavigate = path => navigate(`/${path}`)

@@ -9,6 +9,10 @@ export const PageContainer = styled('main')(
 		align-items: center;
 		justify-content: center;
 		background-color: ${theme.palette.background.paper};
-		padding: ${theme.spacing(3, 10)};
+		padding: ${theme.spacing(3, 3)};
+
+		@media (min-width: ${theme.breakpoints.values.sm}px) {
+			padding: ${theme.spacing(3, 10)};
+		}
 	`
 )
