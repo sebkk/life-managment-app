@@ -11,6 +11,9 @@ export const theme = createTheme({
 		},
 		secondary: {
 			main: '#574b60',
+			light: '#7a7081',
+			dark: '#3b3241',
+			contrastText: '#ffffff',
 		},
 		background: {
 			default: '#fbfbfb',
@@ -18,7 +21,7 @@ export const theme = createTheme({
 		},
 		text: {
 			primary: 'rgba(0,0,0,0.86)',
-			secondary: '#fbfbfb',
+			secondary: 'rgba(0,0,0,0.53)',
 			disabled: 'rgba(37,36,36,0.23)',
 			hint: 'rgba(0,0,0,0.39)',
 		},
@@ -46,6 +49,7 @@ export const theme = createTheme({
 			dark: '#2b732e',
 			contrastText: 'rgba(0,0,0,0.88)',
 		},
+		divider: 'rgba(0,0,0,0.13)',
 	},
 	typography: {
 		fontFamily: 'Montserrat',
