@@ -1,6 +1,6 @@
 import { Typography, Button, styled, css } from '@mui/material'
 
-import useLogic from './useMainPageLogic'
+import { useNavigation } from 'src/hooks'
 
 const WelcomeMessageWrapper = styled('section')(css`
 	text-align: center;
@@ -25,7 +25,7 @@ const ButtonsWrapper = styled('nav')(
 )
 
 const HeroBottomContainer = () => {
-	const { onClickNavigate } = useLogic()
+	const { onClickNavigate } = useNavigation()
 
 	return (
 		<WelcomeMessageWrapper>
